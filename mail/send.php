@@ -23,13 +23,13 @@ $mail->addAddress($to);
 $mail->Subject = $subject;
 $mail->Body = $message;
 
-if(!$mail-> send()){
+if($mail-> send()){
   echo "<h1>Mensaje enviado correctamente</h1>";
   echo "<p>Para: $to</p>";
   echo "<p>Asunto: $subject</p>";
   echo "<p>Mensake: $message</p>";
 }else {
-  echo "<;>Error al enviar el mensaje</h1>";
+  echo "<h1>Error al enviar el mensaje</h1>";
 }
 
 // CERRAR LA CONEXION
