@@ -27,7 +27,7 @@ if($mail-> send()){
   echo "<h1>Mensaje enviado correctamente</h1>";
   echo "<p>Para: $to</p>";
   echo "<p>Asunto: $subject</p>";
-  echo "<p>Mensake: $message</p>";
+  echo "<p>Mensaje: $message</p>";
 }else {
   echo "<h1>Error al enviar el mensaje</h1>";
 }
