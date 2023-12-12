@@ -1,6 +1,6 @@
 <?php
 session_start();
-if (!isset($_SESSION['level']) || $_SESSION['level'] !== 'administrator') {
+if (!isset($_SESSION['level']) || $_SESSION['level']!=="administrator") {
   $_SESSION['message'] = "Se necesitan permisos de administrador";
   header('Location: index.php');
   exit();

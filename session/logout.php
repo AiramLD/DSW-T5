@@ -11,9 +11,8 @@ session_destroy();
 </head>
 <body>
   <h1>Se ha cerrado la sesion correctamente</h1>
- <p>
-  <a href="login.html">Iniciar sesion</a>
- </p>
-
+  <p>
+    <a href="login.php">Volver a entrar</a>
+  </p>
 </body>
 </html>

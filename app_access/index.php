@@ -11,19 +11,18 @@ if (isset($_SESSION['user'])) {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
-    .alert{
+    .alert {
       background-color: #ff9999;
-      padding: 10px;
-    }
+      padding: 10px;}
   </style>
 </head>
 <body>
-  <?php
-    if (isset($_SESSION['message'])) {  
-        echo "<div class=\"alert\">" . $_SESSION['message'] . "</div>";
-          unset($_SESSION['message']);
-    }
-  ?>
+<?php 
+  if (isset($_SESSION['message'])) {
+    echo "<div class=\"alert\">" . $_SESSION['message'] . "</div>";
+    unset($_SESSION['message']);
+  }
+?>
   <h1>Página de Inicio</h1>
 <?php
   if (isset($user)) {
