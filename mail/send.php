@@ -21,7 +21,9 @@ $mail->setFrom($user, 'Airam');
 // EL MENSAJE DEL CORREO
 $mail->addAddress($to);
 $mail->Subject = $subject;
-$mail->Body = $message;
+$mail->isHTML(true);
+$mail->Body = "<h1>$message</h1>";
+
 
 if($mail-> send()){
   echo "<h1>Mensaje enviado correctamente</h1>";
